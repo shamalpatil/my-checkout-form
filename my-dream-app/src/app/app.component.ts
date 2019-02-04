@@ -8,4 +8,8 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'My website';
+
+  notificationCount( cnt : number) {
+    this.title = 'Count is  '+cnt
+  }
 }
