@@ -1,25 +1,4 @@
-     <div class="container">
-      <div class="row">
-          <div class="col-md-12">
-              <app-badge [ntTxt]="'Friend Requests'" [ntCnt]="10" (ntClk)="notificationCount($event)"></app-badge>
-          </div>
-      </div>
-      <div class="row">
-        <div class="col-md-12">
-            <app-badge [ntTxt]="'Sms sent'" [ntCnt]="200" (ntClk)="notificationCount($event)"></app-badge>
-        </div>
-    </div>
-    <div class="row">
-        <div class="col-md-12">
-            <app-badge [ntTxt]="'Inquiries'" [ntCnt]="50" (ntClk)="notificationCount($event)"></app-badge>
-        </div>
-    </div>
-    <div class="row">
-        <div class="col-md-12">
-            <div class="alert alert-secondary" role="alert">
-                {{title}}
-            </div>
-        </div>
-    </div>
-    </div>
+<div class="container">
+    <app-inter-comp-v1></app-inter-comp-v1>
+</div>
   

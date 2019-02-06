@@ -23,6 +23,10 @@ import { BlogComponent } from './blog/blog.component';
 import { PostComponent } from './post/post.component';
 import { ArticleComponent } from './article/article.component';
 import { BadgeComponent } from './badge/badge.component';
+import { InterCompV1Component } from './inter-comp-v1/inter-comp-v1.component';
+import { ProgressComponent } from './progress/progress.component';
+import { EmojisComponent } from './emojis/emojis.component';
+import { LifecycleComponent } from './lifecycle/lifecycle.component';
 
 @NgModule({
   declarations: [
@@ -45,7 +49,11 @@ import { BadgeComponent } from './badge/badge.component';
     BlogComponent,
     PostComponent,
     ArticleComponent,
-    BadgeComponent
+    BadgeComponent,
+    InterCompV1Component,
+    ProgressComponent,
+    EmojisComponent,
+    LifecycleComponent
  ],
   imports: [
     BrowserModule,
