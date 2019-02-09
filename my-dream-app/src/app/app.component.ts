@@ -8,8 +8,7 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'My website';
+  isVsbl= true
 
-  notificationCount( cnt : number) {
-    this.title = 'Count is  '+cnt
-  }
+  
 }

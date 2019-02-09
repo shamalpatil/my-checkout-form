@@ -27,6 +27,11 @@ import { InterCompV1Component } from './inter-comp-v1/inter-comp-v1.component';
 import { ProgressComponent } from './progress/progress.component';
 import { EmojisComponent } from './emojis/emojis.component';
 import { LifecycleComponent } from './lifecycle/lifecycle.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { FormsModule } from '@angular/forms';
+import { MyBootComponent } from './my-boot/my-boot.component';
+import { NgxDatatableModule } from '@swimlane/ngx-datatable';
+import { FormComponent } from './form/form.component';
 
 @NgModule({
   declarations: [
@@ -53,11 +58,16 @@ import { LifecycleComponent } from './lifecycle/lifecycle.component';
     InterCompV1Component,
     ProgressComponent,
     EmojisComponent,
-    LifecycleComponent
+    LifecycleComponent,
+    MyBootComponent,
+    FormComponent
  ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    FormsModule,
+    AppRoutingModule,
+    NgbModule,
+    NgxDatatableModule,
  ],
   providers: [ConfigService],
   bootstrap: [AppComponent]
