@@ -1,5 +1,5 @@
 import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
+import { NgModule, Directive } from '@angular/core';
 
 import { AppComponent } from './app.component';
 import { BootstrapPricingComponent } from './bootstrap-pricing/bootstrap-pricing.component';
@@ -32,6 +32,11 @@ import { FormsModule } from '@angular/forms';
 import { MyBootComponent } from './my-boot/my-boot.component';
 import { NgxDatatableModule } from '@swimlane/ngx-datatable';
 import { FormComponent } from './form/form.component';
+import { DirectivesComponent } from './directives/directives.component';
+import { MagicDirective } from './directives/magic.directive';
+import { InfoCardComponent } from './directives/info-card.component';
+import { InputBoxDirective } from './directives/input-box.directive';
+
 
 @NgModule({
   declarations: [
@@ -60,7 +65,12 @@ import { FormComponent } from './form/form.component';
     EmojisComponent,
     LifecycleComponent,
     MyBootComponent,
-    FormComponent
+    FormComponent,
+    DirectivesComponent,
+    MagicDirective,
+    InfoCardComponent,
+    InputBoxDirective,
+
  ],
   imports: [
     BrowserModule,
