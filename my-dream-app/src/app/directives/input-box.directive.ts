@@ -13,7 +13,7 @@ export class InputBoxDirective {
    @Input()
    dfCl: string;
 
-   ngOnInit(){
+   ngOnInit() {
      this.inwi = this.dfCl;
    }
 
