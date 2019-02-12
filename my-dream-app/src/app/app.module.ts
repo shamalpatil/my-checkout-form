@@ -37,6 +37,7 @@ import { MagicDirective } from './directives/magic.directive';
 import { InfoCardComponent } from './directives/info-card.component';
 import { InputBoxDirective } from './directives/input-box.directive';
 import { ZoomDirective } from './directives/zoom.directive';
+import { OppIfDirective } from './directives/opp-if.directive';
 
 
 @NgModule({
@@ -72,6 +73,7 @@ import { ZoomDirective } from './directives/zoom.directive';
     InfoCardComponent,
     InputBoxDirective,
     ZoomDirective,
+    OppIfDirective,
 
  ],
   imports: [

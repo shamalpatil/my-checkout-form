@@ -3,7 +3,7 @@ import { Directive, HostBinding, Input, OnInit, HostListener } from '@angular/co
 @Directive({
   selector: '[appZoom]'
 })
-export class ZoomDirective {
+export class ZoomDirective implements OnInit{
 
   constructor() { }
 
