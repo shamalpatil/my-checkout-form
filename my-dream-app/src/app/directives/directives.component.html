@@ -75,8 +75,22 @@
           <h1 class="text-muted">This is header</h1>  
           </div>
         </div> -->
-        <div class="row">
+        <!-- <div class="row">
           <div class="col-md-12">
             <strong>{{isTgl}}</strong><h1 *oppIf="isTgl">This is opposite to *ngIf</h1>
           </div>
+        </div> -->
+        <h2>Using ng Switch</h2>
+        <select (change)="setvalue($event)">
+          <option value="">--select--</option>
+          <option value="one">--one--</option>
+          <option value="two">--two--</option>
+          <option value="three">--three--</option>
+          <option value="another">--another--</option>
+        </select>
+        <div [ngSwitch]="choose">
+      <h3 *ngSwitchCase="'one'">First</h3>
+      <h3 *ngSwitchCase="'two'">Second</h3>
+      <h3 *ngSwitchCase="'three'">Three</h3>
+      <h3 *ngSwitchDefault>Default</h3>
         </div>

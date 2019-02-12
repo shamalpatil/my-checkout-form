@@ -9,6 +9,15 @@ import { Info } from './info.item';
 export class DirectivesComponent implements OnInit {
 
   isTgl = true;
+  
+  public choose='';
+  setvalue(drop:any)
+  {
+    this.choose=drop.target.value;
+  }
+
+
+
   mobiles: Array<Info> = [
     { cmp: 'moto', os: 'android', pz: 10 },
     { cmp: 'apple', os: 'ios', pz: 30 },
