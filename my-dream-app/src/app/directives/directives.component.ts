@@ -8,7 +8,7 @@ import { Info } from './info.item';
 })
 export class DirectivesComponent implements OnInit {
 
-  isTgl = false;
+  isTgl = true;
   mobiles: Array<Info> = [
     { cmp: 'moto', os: 'android', pz: 10 },
     { cmp: 'apple', os: 'ios', pz: 30 },
