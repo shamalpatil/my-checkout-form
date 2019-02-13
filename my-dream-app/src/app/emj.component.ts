@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ComService } from './com.service';
 
 @Component({
   selector: 'app-emj',
@@ -14,7 +15,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class EmjComponent implements OnInit {
 
-  constructor() { }
+  emojiInfo : InfoEmoji;
+
+
+  constructor(
+    private com : ComService
+  ) { }
 
   ngOnInit() {
   }

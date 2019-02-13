@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ComService } from './com.service';
 
 @Component({
   selector: 'app-prg',
@@ -20,7 +21,9 @@ export class PrgComponent implements OnInit {
   prgStr: string;
   progress: number = 0;
 
-  constructor() { }
+  constructor(
+    private com : ComService
+  ) { }
 
   ngOnInit() {
   }
