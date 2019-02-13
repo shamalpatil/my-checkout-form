@@ -6,22 +6,6 @@ import { BootstrapPricingComponent } from './bootstrap-pricing/bootstrap-pricing
 import { PricingNavComponent } from './bootstrap-pricing/pricing-nav.component';
 import { CardContainerComponent } from './bootstrap-pricing/card-container/card-container.component';
 import { FooterContainerComponent } from './bootstrap-pricing/footer-container/footer-container.component';
-import { PricingCardComponent } from './bootstrap-pricing/card-container/pricing-card.component';
-import { IntroComponent } from './intro/intro.component';
-import { GalleryComponent } from './gallery/gallery.component';
-import { ContentComponent } from './content/content.component';
-import { TestimonialComponent } from './testimonial/testimonial.component';
-import { PricingComponent } from './pricing/pricing.component';
-import { FooterComponent } from './footer/footer.component';
-import { ClientsComponent } from './clients/clients.component';
-import { HeaderComponent } from './header/header.component';
-import { SocialComponent } from './social/social.component';
-import { NavigationComponent } from './navigation/navigation.component';
-import { AppRoutingModule } from './app-routing.module';
-import { ConfigService } from './config.service';
-import { BlogComponent } from './blog/blog.component';
-import { PostComponent } from './post/post.component';
-import { ArticleComponent } from './article/article.component';
 import { BadgeComponent } from './badge/badge.component';
 import { InterCompV1Component } from './inter-comp-v1/inter-comp-v1.component';
 import { ProgressComponent } from './progress/progress.component';
@@ -38,6 +22,11 @@ import { InfoCardComponent } from './directives/info-card.component';
 import { InputBoxDirective } from './directives/input-box.directive';
 import { ZoomDirective } from './directives/zoom.directive';
 import { OppIfDirective } from './directives/opp-if.directive';
+import { ServicesComponent } from './services/services.component';
+import { PricingCardComponent } from './bootstrap-pricing/card-container/pricing-card.component';
+import { InterCompV2Component } from './inter-comp-v2/inter-comp-v2.component';
+import { PrgComponent } from './prg.component';
+import { EmjComponent } from './emj.component';
 
 
 @NgModule({
@@ -47,20 +36,6 @@ import { OppIfDirective } from './directives/opp-if.directive';
     PricingNavComponent,
     CardContainerComponent,
     FooterContainerComponent,
-    PricingCardComponent,
-    IntroComponent,
-    GalleryComponent,
-    ContentComponent,
-    TestimonialComponent,
-    PricingComponent,
-    FooterComponent,
-    ClientsComponent,
-    HeaderComponent,
-    SocialComponent,
-    NavigationComponent,
-    BlogComponent,
-    PostComponent,
-    ArticleComponent,
     BadgeComponent,
     InterCompV1Component,
     ProgressComponent,
@@ -74,16 +49,22 @@ import { OppIfDirective } from './directives/opp-if.directive';
     InputBoxDirective,
     ZoomDirective,
     OppIfDirective,
+    ServicesComponent,
+    PricingCardComponent,
+    InterCompV2Component,
+    PrgComponent,
+    EmjComponent
 
  ],
   imports: [
     BrowserModule,
     FormsModule,
-    AppRoutingModule,
     NgbModule,
     NgxDatatableModule,
  ],
-  providers: [ConfigService],
+  providers: [
+   // SampleService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
