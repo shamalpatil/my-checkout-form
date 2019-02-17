@@ -24,9 +24,15 @@ import { ZoomDirective } from './directives/zoom.directive';
 import { OppIfDirective } from './directives/opp-if.directive';
 import { ServicesComponent } from './services/services.component';
 import { PricingCardComponent } from './bootstrap-pricing/card-container/pricing-card.component';
-import { InterCompV2Component } from './inter-comp-v2/inter-comp-v2.component';
-import { PrgComponent } from './prg.component';
-import { EmjComponent } from './emj.component';
+import { DataService } from './services/data.service';
+import { AggrService } from './services/aggr.service';
+import { SampleService } from './services/sample.service';
+import { MyRouterModule } from './app.routing';
+import { FirstComponent } from './first/first.component';
+import { SecondComponent } from './first/second/second.component';
+import { ForgotComponent } from './first/forgot/forgot.component';
+import { ProfileComponent } from './first/second/profile.component';
+import { PaymentComponent } from './first/second/payment.component';
 
 
 @NgModule({
@@ -51,9 +57,11 @@ import { EmjComponent } from './emj.component';
     OppIfDirective,
     ServicesComponent,
     PricingCardComponent,
-    InterCompV2Component,
-    PrgComponent,
-    EmjComponent
+    FirstComponent,
+    SecondComponent,
+    ForgotComponent,
+    ProfileComponent,
+    PaymentComponent
 
  ],
   imports: [
@@ -61,9 +69,12 @@ import { EmjComponent } from './emj.component';
     FormsModule,
     NgbModule,
     NgxDatatableModule,
+    MyRouterModule
  ],
   providers: [
-   // SampleService
+    SampleService,
+    DataService,
+    AggrService
   ],
   bootstrap: [AppComponent]
 })

@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ComService } from './com.service';
+import { InfoEmoji } from './progress/info-emoji';
 
 @Component({
   selector: 'app-emj',

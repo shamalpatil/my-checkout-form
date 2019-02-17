@@ -12,13 +12,27 @@
           <input type="button" value="Okay" class="btn btn-info" (click)="isVsbl = !isVsbl"> 
       </div>
   </div> -->
-   <div class="container">
-     <!--  <app-my-boot></app-my-boot> -->
-      <!-- <app-directives></app-directives> -->
-     <!--  <app-services></app-services> --> 
-      <!-- <app-services></app-services>
-      <app-services></app-services>
-      <app-services></app-services>
-      <app-services></app-services> -->
- <app-inter-comp-v2></app-inter-comp-v2>
-  </div> 
+ <!-- <div class="container">
+    <app-my-boot></app-my-boot> 
+    <app-directives></app-directives> 
+    <app-services></app-services>
+    <app-services></app-services>
+    <app-services></app-services> 
+    <app-services></app-services> 
+     <app-services></app-services> 
+    <app-inter-comp-v2></app-inter-comp-v2> 
+  </div> -->
+
+  <div class="container">
+      <div class="row">
+          <div class="col-md-12">
+              <h3>Routers</h3>
+              <hr>
+          </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+            <router-outlet></router-outlet>
+        </div>
+    </div>
+  </div>
